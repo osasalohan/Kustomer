@@ -11,12 +11,17 @@ class NavBar extends React.Component {
 	}
 	
 	renderSwitch = (userType) => {
+		const { currentUser } = this.props;
+		
 		switch(userType) {
 			case 'professional':
 				return (
 					<ul className="nav navbar-nav navbar-right">
 						<li>
-							<Link to="/">Add a Project</Link>
+							<Link to={`/professional/${currentUser.user.id}/profile`}>Edit Profile</Link>
+						</li>
+						<li>
+							<Link to={`/professional/${currentUser.user.id}/newproject`}>Add a Project</Link>
 						</li>
 						<li>
 							<Link to="/" onClick={this.logout}>Log Out</Link>

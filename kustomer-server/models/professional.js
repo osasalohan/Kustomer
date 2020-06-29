@@ -38,6 +38,9 @@ const professionalSchema = new mongoose.Schema({
 			ref: 'Project'
 		}
 	],
+	profilePic: {
+		type: String
+	},
 	userType: {
 		type: String,
 		default: 'professional'

@@ -8,9 +8,12 @@ export function setTokenHeader(token) {
 	}
 }
 
-export function apiCall(method, path, data) {
+export function apiCall(method, path, data, isFile) {
 	return new Promise((resolve, reject) => {
-		return axios[method](path, data)
+		const axiosRequest = isFile ?
+					axios[method](path, data, {headers: {'Content-Type': 'multipart/form-data'}}) :
+					axios[method](path, data)
+		return axiosRequest
 			.then(res => {
 				return resolve(res.data);
 		})

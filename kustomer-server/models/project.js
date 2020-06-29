@@ -13,7 +13,12 @@ const projectSchema = new mongoose.Schema({
 	professional: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref: 'Professional'
-	}
+	},
+	projectPics: [
+		{
+			type: String
+		}
+	]
 }, {
 	timestamps: true
 });

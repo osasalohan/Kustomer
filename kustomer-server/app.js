@@ -8,12 +8,14 @@ const errorHandler = require('./handlers/error');
 const projectsRoutes = require('./routes/projects');
 const getPortfolio = require('./helpers/projects');
 const { loginRequired, ensureCorrectUser } = require('./middleware/auth');
-// const imageRoutes = require('./routes/images');
+const profilePicsRoutes = require('./routes/profilePics');
+const projectPicsRoutes = require('./routes/projectPics');
 
 
 app.use(bodyParser.json());
 
-// app.use('/images', imageRoutes);
+app.use('/api/:id/profilepic', profilePicsRoutes);
+app.use('/api/:id/projectpics/:project_id', projectPicsRoutes);
 app.use('/api/auth', authRoutes);
 app.use(
 	'/api/professionals/:id/portfolio',

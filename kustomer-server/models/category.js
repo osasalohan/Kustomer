@@ -17,12 +17,12 @@ const categorySchema = new mongoose.Schema({
 
 const Category = mongoose.model('Category', categorySchema);
 
-Category.create({ name: 'Home Services' })
-	.then(instance => console.log(instance))
-	.catch(err => console.log(err));
+// Category.create({ name: 'Home Services' })
+// 	.then(instance => console.log(instance))
+// 	.catch(err => console.log(err));
 
-Category.create({ name: 'Remote Services' })
-	.then(instance => console.log(instance))
-	.catch(err => console.log(err));
+// Category.create({ name: 'Remote Services' })
+// 	.then(instance => console.log(instance))
+// 	.catch(err => console.log(err));
 
 module.exports = Category;
