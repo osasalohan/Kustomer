@@ -10,7 +10,7 @@ import { authCustomer, authProfessional } from '../store/actions/auth';
 import { removeError } from '../store/actions/errors';
 
 const Main = props => (
-	<div className="container">
+	<div className="container-fluid">
 		<Switch>
 			<Route exact path="/">
 				<HomePage currentUser={props.currentUser} />

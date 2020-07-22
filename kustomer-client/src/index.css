@@ -1,7 +1,3 @@
-/* body {
-	background: grey;
-}
- */
 .navbar {
   margin-bottom: 1rem;
 }
@@ -27,4 +23,181 @@
 
 ul.nav.navbar-nav li {
   margin: 0 0.5rem;
+}
+
+div.jumbotron.jumbotron-fluid {
+	background-image: url("./images/person-holding-grinder.jpg");
+	background-size: 100% 100%;
+	height: 80vh;
+}
+
+.jumbotron-fluid .container {
+	width: 40%;
+	min-width: 400px;
+}
+
+.jumbotron-fluid .input-group {
+	width: 70%;
+	min-width: 370px;
+}
+
+.header {
+	font-weight: bold;
+	font-size: 1.5em;
+	word-spacing: 2.5px;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.category {
+	width: 180px;
+	height: 120px;
+	margin: 5px;
+	box-shadow: 0 1px 2px;
+	border-radius: 10px;
+}
+
+.category i {
+	font-size: 3em;
+}
+
+.category div {
+	font-weight: bold;
+	width: 80%;
+}
+
+.service {
+	width: 350px;
+	height: 302px;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+.service img {
+	width: 100%;
+	height: 232px;
+}
+
+.service p {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.review-container {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	background: #f9f9f9;
+}
+
+.review {
+	margin: 60px;
+}
+
+.review * {
+	margin-bottom: 15px;
+}
+
+.review img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+
+.review p {
+	width: 70%;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.review p:nth-of-type(1) {
+	font-size: 1.5em;
+}
+
+.review-tracker {
+	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	background: grey;
+	margin: 0 2px;
+}
+
+.active-tracker {
+	background: #0275d8;
+}
+
+/* .fade-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 500ms, transform 500ms;
+} */
+
+.sec-jumbotron {
+	background-image: url("./images/woman-thinking.jpg");
+	background-size: cover;
+	height: 50vh;
+	margin: 70px 90px;
+}
+
+.sec-jumbotron .btn {
+	height: 50px;
+	width: 200px;
+	font-size: 0.8em;
+}
+
+.footer {
+	margin: 70px 90px 10px;
+}
+
+.footer img {
+	display: inline-block;
+  width: 30px;
+	height: auto;
+  margin-right: 5px;
+}
+
+.footer h6 {
+	font-size: 1.5em;
+}
+
+.info {
+	line-height: 30px;
+}
+
+.info div {
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+
+.info a {
+	color: #212529;
+}
+
+hr {
+	border-top: 1px solid #8c8b8b;
+}
+
+footer {
+	color: #8c8b8b;
+}
+
+footer .fab {
+	margin-left: 10px;
+	font-size: 2em;
+	color: #8c8b8b;
 }
